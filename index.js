@@ -44,7 +44,7 @@ app.use("/user", userRoute);
 
 // Serve static files from React app
 app.use("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
 });
 
 // Start server
